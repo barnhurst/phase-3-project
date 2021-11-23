@@ -17,6 +17,10 @@ function CreateOrDelete() {
         <Link className='button' to='/createOwner'>
           Add Owner
         </Link>
+        &nbsp; &nbsp;
+        <Link className='button' to='/deleteOwner'>
+          Delete Owner
+        </Link>
       </span>
     </div>
   );

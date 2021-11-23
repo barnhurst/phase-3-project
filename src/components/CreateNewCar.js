@@ -4,7 +4,7 @@ function CreateNewCar() {
   const [data, setData] = useState({
     make: '',
     model: '',
-    year: '',
+    // year: '',
     car_id: '',
     owner_id: '',
   });
@@ -24,15 +24,15 @@ function CreateNewCar() {
       body: JSON.stringify({
         make: data.make,
         model: data.model,
-        year: data.year,
-        car_id: data.car_id,
+        // year: data.year,
+        // car_id: data.car_id,
         owner_id: data.owner_id,
       }),
     }).then(() => {
       setData({
         make: '',
         model: '',
-        year: '',
+        // year: '',
         car_id: '',
         owner_id: '',
       });
@@ -74,7 +74,7 @@ function CreateNewCar() {
             />
           </span>
           <br />
-          <span>
+          {/* <span>
             Year: &nbsp;
             <input
               required
@@ -86,7 +86,7 @@ function CreateNewCar() {
               placeholder='Year'
               onChange={handleChange}
             />
-          </span>
+          </span> */}
           &nbsp; &nbsp;
           <span>
             Owner: &nbsp;

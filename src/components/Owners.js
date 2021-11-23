@@ -14,23 +14,35 @@ function Owners() {
  
 
   const ownerList = owners.map((owner) => {
+    const cars = owner.cars.map((car) => {
+      return (
+        <li>
+          Make: {car.make}
+          Model: {car.model}
+          Car ID: {car.id}
+        </li>
+      )
+    })
     return (
-      <div className='container'>
-        <div className='Content'>
-          
-          <ul id={owner.id}>
-            <li>
-              Name: {owner.last_name}, {owner.first_name}
+            <li id={owner.id}>
+              <h3>Name: {owner.last_name}, {owner.first_name}</h3>
+              <ul>
+                {cars}
+                </ul>
             </li>
-         
-          </ul>
-          <br />
-        </div>
-      </div>
     );
   });
 
-  return <div className='ownersList'><h1>Owners</h1>{ownerList}</div>;
+  return (
+  
+  <div className='ownersList'>
+  <h1>Owners</h1>
+    <div className='Content'>
+    <div className='container'>
+     <ul>{ownerList}</ul>
+     </div>
+    </div>
+  </div>)
 }
 
 export default Owners;

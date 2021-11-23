@@ -7,17 +7,13 @@ function Header() {
       <Link className='navLinks' id='homeLink' to='/home'>
         Home
       </Link>
-      <Link className='navLinks' id='carsLink' to='/cars'>
+      {/* <Link className='navLinks' id='carsLink' to='/cars'>
         Cars
-      </Link>
+      </Link> */}
       <Link className='navLinks' id='ownersLink' to='/owners'>
         Owners
       </Link>
-      <Link
-        className='navLinks'
-        id='updateLiisting'
-        to='/updateList'
-      >
+      <Link className='navLinks' id='updateLiisting' to='/updateList'>
         Update
       </Link>
     </div>

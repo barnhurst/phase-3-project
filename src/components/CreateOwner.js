@@ -22,7 +22,7 @@ function CreateOwner() {
       body: JSON.stringify({
         first_name: data.first_name,
         last_name: data.last_name,
-        owner_id: data.owner_id,
+        // owner_id: data.owner_id,
       }),
     }).then(() => {
       setData({
